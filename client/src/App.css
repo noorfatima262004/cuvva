@@ -1,0 +1,626 @@
+/* Base styles */
+.signup-container {
+  min-height: 100vh;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+}
+
+.signup-navbar {
+  background-color: #7c20d9;
+  padding: 12px 30px;
+  display: flex;
+  align-items: center;
+  color: white;
+}
+
+.signup-logo {
+  width: 20px;
+  height: 20px;
+  margin-top: 8px;
+  margin-right: 5px;
+}
+
+.signup-logo-text {
+  margin-top: 8px;
+  font-size: 1.7rem;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 500;
+}
+
+.signup-box-container {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.signup-box {
+  background-color: #334155;
+  padding: 25px;
+  border-radius: 10px;
+  text-align: center;
+  color: #a259ff;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+  border: 1.5px solid white;
+  width: 100%;
+  max-width: 460px;
+}
+
+.signup-title {
+  font-size: 1.4rem;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+.signup-input {
+  display: block;
+  width: 100%;
+  margin: 10px 0;
+  padding: 10px 12px;
+  border: 1px solid rgb(203, 136, 203);
+  color: black;
+  border-radius: 5px;
+  font-family: 'Ubuntu', sans-serif;
+  box-sizing: border-box;
+}
+
+.signup-buttons {
+  display: flex;
+  margin-top: 15px;
+  gap: 10px;
+  width: 100%;
+}
+
+.signup-btn {
+  border: none;
+  padding: 10px 25px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 1rem;
+  width: 100%;
+}
+
+.signup-primary-btn {
+  background-color: #a259ff;
+  color: white;
+}
+
+.signup-secondary-btn {
+  background-color: #5a6b81;
+  color: white;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 480px) {
+  .signup-navbar {
+    padding: 10px 20px;
+  }
+  
+  .signup-logo-text {
+    font-size: 1.4rem;
+  }
+  
+  .signup-box {
+    padding: 20px 15px;
+  }
+  
+  .signup-buttons {
+    flex-direction: column;
+    gap: 8px;
+  }
+  
+  .signup-input {
+    padding: 8px 12px;
+    font-size: 0.9rem;
+  }
+  
+  .signup-btn {
+    padding: 8px;
+    font-size: 0.9rem;
+  }
+}
+
+/* Tablet responsiveness */
+@media (min-width: 481px) and (max-width: 768px) {
+  .signup-box {
+    max-width: 400px;
+  }
+}
+
+/* Base styles */
+.login-container {
+  min-height: 100vh;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+}
+
+.login-navbar {
+  background-color: #7c20d9;
+  padding: 12px 30px;
+  display: flex;
+  align-items: center;
+  color: white;
+}
+
+.login-logo {
+  width: 20px;
+  height: 20px;
+  margin-top: 8px;
+  margin-right: 5px;
+}
+
+.login-logo-text {
+  margin-top: 8px;
+  font-size: 1.7rem;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 500;
+}
+
+.login-box-container {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.login-box {
+  background-color: #334155;
+  padding: 25px;
+  border-radius: 10px;
+  text-align: center;
+  color: #a259ff;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+  border: 1.5px solid white;
+  width: 100%;
+  max-width: 460px;
+}
+
+.login-title {
+  font-size: 1.4rem;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+.login-input {
+  display: block;
+  width: 100%;
+  margin: 10px 0;
+  padding: 10px 12px;
+  border: 1px solid rgb(203, 136, 203);
+  color: black;
+  border-radius: 5px;
+  font-family: 'Ubuntu', sans-serif;
+  box-sizing: border-box;
+}
+
+.login-buttons {
+  display: flex;
+  margin-top: 15px;
+  gap: 10px;
+  width: 100%;
+}
+
+.login-btn {
+  border: none;
+  padding: 10px 25px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 1rem;
+  width: 100%;
+  transition: background-color 0.3s ease;
+}
+
+.login-primary-btn {
+  background-color: #a259ff;
+  color: white;
+}
+
+.login-secondary-btn {
+  background-color: #5a6b81;
+  color: white;
+}
+
+.login-primary-btn:hover {
+  background-color: rgba(186, 119, 254, 0.889);
+}
+
+.login-secondary-btn:hover {
+  background-color: #a3b3cad5;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 480px) {
+  .login-navbar {
+    padding: 10px 20px;
+  }
+  
+  .login-logo-text {
+    font-size: 1.4rem;
+  }
+  
+  .login-box {
+    padding: 20px 15px;
+  }
+  
+  .login-buttons {
+    flex-direction: column;
+    gap: 8px;
+  }
+  
+  .login-input {
+    padding: 8px 12px;
+    font-size: 0.9rem;
+  }
+  
+  .login-btn {
+    padding: 8px;
+    font-size: 0.9rem;
+  }
+}
+
+/* Tablet responsiveness */
+@media (min-width: 481px) and (max-width: 768px) {
+  .login-box {
+    max-width: 400px;
+    padding: 20px;
+  }
+}
+
+/* Small mobile devices */
+@media (max-width: 360px) {
+  .login-box {
+    padding: 15px 10px;
+  }
+  
+  .login-title {
+    font-size: 1.2rem;
+  }
+  
+  .login-input {
+    padding: 7px 10px;
+  }
+}
+
+/* Base styles */
+.dashboard-container {
+  min-height: 100vh;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+}
+
+.dashboard-header {
+  background-color: #7c20d9;
+  padding: 12px 30px;
+  display: flex;
+  align-items: center;
+  color: white;
+}
+
+.dashboard-logo {
+  width: 20px;
+  height: 20px;
+  margin-top: 8px;
+  margin-right: 5px;
+}
+
+.dashboard-logo-text {
+  margin-top: 8px;
+  font-size: 1.7rem;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 500;
+}
+
+.dashboard-logout-btn {
+  margin-left: auto;
+  background: rgba(168, 85, 247);
+  padding: 6px 20px;
+  border-radius: 5px;
+  border: none;
+  color: white;
+  cursor: pointer;
+  font-size: 15px;
+  font-family: 'Ubuntu', sans-serif;
+  transition: background-color 0.3s ease;
+}
+
+.dashboard-logout-btn:hover {
+  background: rgba(168, 85, 247, 0.8);
+}
+
+.dashboard-content {
+  margin: 0 auto;
+  width: 90%;
+  max-width: 900px;
+  background-color: #334155;
+  padding: 3rem 2rem;
+  border-radius: 10px;
+  text-align: center;
+  color: #a259ff;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+  border: 1.5px solid white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 14rem;
+  margin-bottom: 2rem;
+}
+
+.dashboard-title {
+  font-size: 1.8rem;
+  font-weight: 500;
+  font-family: 'Ubuntu', sans-serif;
+  margin-top: -1rem;
+  color: #a259ff;
+}
+
+.dashboard-subtitle {
+  color: white;
+  font-weight: 400;
+  margin-top: 14px;
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 1rem;
+}
+
+.dashboard-actions {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  max-width: 50%;
+  margin-top: 25px;
+  margin-bottom: -1rem;
+}
+
+.dashboard-primary-btn {
+  background-color: #a259ff;
+  color: white;
+  border: none;
+  padding: 10px 25px;
+  width: 100%;
+  border-radius: 6px;
+  cursor: pointer;
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.dashboard-primary-btn:hover {
+  background-color: rgba(186, 119, 254, 0.889);
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  .dashboard-header {
+    padding: 10px 20px;
+  }
+  
+  .dashboard-logo-text {
+    font-size: 1.4rem;
+  }
+  
+  .dashboard-content {
+    padding: 2rem 1.5rem;
+    margin-top: 8rem;
+    width: 85%;
+  }
+  
+  .dashboard-title {
+    font-size: 1.5rem;
+  }
+  
+  .dashboard-actions {
+    max-width: 80%;
+  }
+  
+  .dashboard-logout-btn {
+    padding: 6px 15px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .dashboard-content {
+    padding: 1.5rem 1rem;
+    margin-top: 6rem;
+    width: 80%;
+  }
+  
+  .dashboard-title {
+    font-size: 1.3rem;
+  }
+  
+  .dashboard-subtitle {
+    font-size: 0.9rem;
+  }
+  
+  .dashboard-actions {
+    max-width: 100%;
+  }
+  
+  .dashboard-primary-btn {
+    padding: 8px 20px;
+    font-size: 0.9rem;
+  }
+}
+
+.image-upload-container {
+  text-align: left;
+  margin-top: 10px;
+  width: 100%;
+}
+
+.image-upload-input {
+  display: none;
+}
+
+.image-upload-label {
+  color: #a259ff;
+  cursor: pointer;
+  font-size: 18px;
+  display: inline-block;
+  width: 100%;
+  text-align: left;
+}
+
+@media (max-width: 768px) {
+  .image-upload-label {
+    font-size: 16px;
+  }
+}
+
+/* Base styles */
+.policy-container {
+  min-height: 100vh;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+}
+
+.policy-header {
+  background-color: #7c20d9;
+  padding: 12px 30px;
+  display: flex;
+  align-items: center;
+  color: white;
+}
+
+.policy-logo {
+  width: 20px;
+  height: 20px;
+  margin-top: 8px;
+  margin-right: 5px;
+}
+
+.policy-logo-text {
+  margin-top: 8px;
+  font-size: 1.7rem;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 500;
+}
+
+.policy-form-container {
+  margin: 3rem auto;
+  width: 90%;
+  max-width: 800px;
+  background-color: #1e293b;
+  padding: 2rem;
+  border-radius: 10px;
+  text-align: center;
+  color: #a259ff;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+  border: 1px solid rgba(122, 145, 203, 0.581);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 3rem;
+}
+
+.policy-title {
+  font-size: 1.8rem;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 500;
+  margin-bottom: 1.5rem;
+  color: #7813fc;
+}
+
+.form-field {
+  width: 100%;
+  margin-bottom: 0.6rem;
+  text-align: left;
+}
+
+.form-label {
+  display: block;
+  color: white;
+  /* margin-bottom: 0.5rem; */
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 1rem;
+}
+
+.form-input {
+  display: block;
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid rgb(203, 136, 203);
+  color: black;
+  border-radius: 5px;
+  font-family: 'Ubuntu', sans-serif;
+  box-sizing: border-box;
+}
+
+.policy-upload-section {
+  width: 100%;
+  margin-top: 1rem;
+}
+
+.policy-submit-btn {
+  background-color: #6e1bdc;
+  color: white;
+  border: none;
+  padding: 12px 28px;
+  width: 100%;
+  max-width: 200px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 1rem;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.policy-submit-btn:hover {
+  background-color: #5a15b8;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .policy-form-container {
+    padding: 1.5rem;
+    margin-top: 2rem;
+  }
+  
+  .policy-title {
+    font-size: 1.5rem;
+  }
+  
+  .form-input {
+    padding: 0.6rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .policy-header {
+    padding: 10px 20px;
+  }
+  
+  .policy-logo-text {
+    font-size: 1.4rem;
+  }
+  
+  .policy-form-container {
+    padding: 1rem;
+    width: 95%;
+  }
+  
+  .policy-title {
+    font-size: 1.3rem;
+  }
+  
+  .form-label {
+    font-size: 0.9rem;
+  }
+  
+  .policy-submit-btn {
+    padding: 10px 20px;
+    font-size: 0.9rem;
+  }
+}

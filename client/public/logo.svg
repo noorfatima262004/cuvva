@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100">
+  <!-- Empty circle outline -->
+  <circle cx="50" cy="50" r="45" stroke="purple" stroke-width="14" fill="none"/>
+  
+  <!-- Inner bottom half fill (white) -->
+  <path d="M 50 50 L 95 50 A 45 45 0 0 1 5 50" fill="purple" stroke="none"/>
+  
+</svg>
